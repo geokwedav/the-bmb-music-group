@@ -140,7 +140,7 @@
             font-weight: 300;
         }
 
-        /* --- Band Grid --- */
+        /* --- Grid & Cards --- */
         .grid-container {
             max-width: 1300px;
             margin: 0 auto;
@@ -151,6 +151,31 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            background: #000;
+            border-radius: 4px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
 
         .card {
@@ -339,6 +364,7 @@
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#members">Artists</a></li>
+            <li><a href="#past-shows">Past Shows</a></li>
             <li><a href="#shows">Shows</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#booking">Book a Gig</a></li>
@@ -362,7 +388,7 @@
             <div class="band-grid">
                 <div class="member-wrapper">
                     <div class="card">
-                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800" alt="Paul Bloem">
+                        <img src="https://raw.githubusercontent.com/geokwedav/the-bmb-music-group/main/Paul%20Bloem%20-%20Lead%20Singer.jpg" alt="Paul Bloem">
                     </div>
                     <div class="card-info">
                         <h3>Paul Bloem</h3>
@@ -371,7 +397,7 @@
                 </div>
                 <div class="member-wrapper">
                     <div class="card">
-                        <img src="https://images.unsplash.com/photo-1514320298324-a4a27311f5d8?auto=format&fit=crop&q=80&w=800" alt="Mick Mulders">
+                        <img src="https://raw.githubusercontent.com/geokwedav/the-bmb-music-group/main/Mick%20Mulders.jpg" alt="Mick Mulders">
                     </div>
                     <div class="card-info">
                         <h3>Mick Mulders</h3>
@@ -380,7 +406,7 @@
                 </div>
                 <div class="member-wrapper">
                     <div class="card">
-                        <img src="https://images.unsplash.com/photo-1549419442-834c898c645e?auto=format&fit=crop&q=80&w=800" alt="Matts Belin">
+                        <img src="https://raw.githubusercontent.com/geokwedav/the-bmb-music-group/main/Matts%20Belin.jpg" alt="Matts Belin">
                     </div>
                     <div class="card-info">
                         <h3>Matts Belin</h3>
@@ -390,7 +416,7 @@
 
                  <div class="member-wrapper">
                     <div class="card">
-                        <img src="https://images.unsplash.com/photo-1549419442-834c898c645e?auto=format&fit=crop&q=80&w=800" alt="Ray Hutubessy">
+                        <img src="https://raw.githubusercontent.com/geokwedav/the-bmb-music-group/main/Raymond%20Hutubessy.jpg" alt="Ray Hutubessy">
                     </div>
                     <div class="card-info">
                         <h3>Ray Hutubessy</h3>
@@ -400,7 +426,7 @@
 
                  <div class="member-wrapper">
                     <div class="card">
-                        <img src="https://images.unsplash.com/photo-1549419442-834c898c645e?auto=format&fit=crop&q=80&w=800" alt="George Davis">
+                        <img src="https://raw.githubusercontent.com/geokwedav/the-bmb-music-group/main/George%20Davis.jpg" alt="George Davis">
                     </div>
                     <div class="card-info">
                         <h3>George Davis</h3>
@@ -408,39 +434,41 @@
                     </div>
                 </div>
             </div>
- <!-- Past Shows -->
-            <div class="section-header" id="members"><span>Past Shows</span></div>
-            <div class="band-grid">
-                <div class="member-wrapper">
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&q=80&w=800" alt="Paul Bloem">
+
+            <!-- Past Shows / Video Section -->
+            <div class="section-header" id="past-shows"><span>Past Shows</span></div>
+            <div class="video-grid">
+                <div class="video-wrapper">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VNQY1QCE-eg" title="I Shall Be Released" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="card-info">
-                        <h3>Fete de la musique, Nyon</h3>
-                        <p>June 2025</p>
+                        <h3>I Shall Be Released</h3>
+                        <p>Live Performance</p>
                     </div>
                 </div>
-                <div class="member-wrapper">
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1514320298324-a4a27311f5d8?auto=format&fit=crop&q=80&w=800" alt="Mick Mulders">
+                
+                <div class="video-wrapper">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/cb0pqAA6erE" title="Performing Bad Moon Rising" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="card-info">
-                        <h3>Fete de la musique, Nyon</h3>
-                        <p>June 2025</p>
-                    </div>
-                </div>
-                <div class="member-wrapper">
-                    <div class="card">
-                        <img src="https://images.unsplash.com/photo-1549419442-834c898c645e?auto=format&fit=crop&q=80&w=800" alt="Matts Belin">
-                    </div>
-                    <div class="card-info">
-                        <h3>Fete de la musique, Nyon</h3>
-                        <p>June 2025</p>
+                        <h3>Bad Moon Rising</h3>
+                        <p>Creedence Clearwater Revival Cover</p>
                     </div>
                 </div>
 
-                
+                <div class="video-wrapper">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/pAl6kvNWBdw" title="Black Magic Woman" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-info">
+                        <h3>Black Magic Woman</h3>
+                        <p>Santana Cover</p>
+                    </div>
+                </div>
             </div>
+
             <!-- Tour Dates -->
             <div class="section-header" id="shows"><span>Upcoming Dates</span></div>
             <div class="shows-list">
@@ -485,10 +513,18 @@
             <!-- Gallery -->
             <div class="section-header" id="gallery"><span>Gallery</span></div>
             <div class="gallery-grid">
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1501612780327-45045538702b?auto=format&fit=crop&q=80&w=600" alt="Live"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1520522158491-c1e230ea427f?auto=format&fit=crop&q=80&w=600" alt="Backstage"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&q=80&w=600" alt="Studio"></div>
-                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1459749411177-042180ce673b?auto=format&fit=crop&q=80&w=600" alt="Crowd"></div>
+                <div class="gallery-item">
+                    <img src="https://raw.githubusercontent.com/geokwedav/the-bmb-music-group/main/2025-06-21%2012.50.48.jpg" alt="Performance 2025">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://raw.githubusercontent.com/geokwedav/the-bmb-music-group/main/NYON%20FDB%202025%202.jpg" alt="Nyon FDB 2025">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://raw.githubusercontent.com/geokwedav/the-bmb-music-group/main/NYON%20FDM%202025%203.jpg" alt="Nyon FDM 2025">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://raw.githubusercontent.com/geokwedav/the-bmb-music-group/main/NYON%20FDM%202025%205.jpg" alt="Nyon FDM 2025 Session">
+                </div>
             </div>
 
         </div>
