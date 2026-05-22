@@ -515,13 +515,15 @@
         <div class="grid-container">
             <div class="section-header" id="booking" style="color: white; border-color: rgba(255,255,255,0.1);"><span>Bookings</span></div>
             <div class="form-section">
-                <form name="input" method="POST" action="https://formspree.io/georgedavis10@gmail.com">
-                    <input type="text" placeholder="VENUE NAME" required>
-                    <input type="text" placeholder="LOCATION" required>
-                    <input type="date" required>
-                    <textarea rows="3" placeholder="TELL US ABOUT THE EVENT"></textarea>
-                    <button type="submit" class="submit-btn">Send Booking Inquiry</button>
-                </form>
+                   <form name="input" method="POST" action="https://formspree.io/georgedavis10@gmail.com">
+Venue Name:  <input type="text" name="Venue Name" placeholder="Your Venue" >
+Location: <input type="text" name="Location" placeholder="Your Location" >
+Date: <input type="text" name="Date" placeholder="The date" >
+Email: <input type="email" name="_replyto" placeholder="Your email" >
+Message:    <textarea name="message" placeholder="TELL US ABOUT THE EVENT"></textarea>
+<input type="submit" value="Send">
+<input type="hidden" name="_subject"  value="Enter your tex here" />
+<input type="hidden" name="_next"  value="https://geokwedav.github.io/the-bmb-music-group/#home" />
             </div>
 
             <div class="section-header" id="contact" style="color: white; border-color: rgba(255,255,255,0.1);"><span>Newsletter</span></div>
